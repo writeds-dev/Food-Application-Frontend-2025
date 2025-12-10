@@ -50,7 +50,7 @@ function Header() {
           <a href="" className="mb-3">Contact</a>
 
           <button className="flex items-center gap-1 mr-2 h-10 hover:bg-orange-700 bg-orange-600 text-white rounded">
-            <FaPhoneAlt className="text-sm ml-2" />
+            <FaPhoneAlt className="text-sm ml-6" />
             Call Us
             </button>
         </div>

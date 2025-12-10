@@ -6,6 +6,7 @@ import img4 from '../assets/images/img4.jpg'
 import img5 from '../assets/images/img5.jpg'
 import img6 from '../assets/images/img6.webp'
 import img7 from '../assets/images/img7.webp'
+import Mbanner from '../assets/images/menubanner.jpg';
 function Menu()
 {
 return(
@@ -13,7 +14,10 @@ return(
         <div>
             
             {/* breadcrum menu */}
-            <div className="flex items-center gap-2 text-gray-600 text-sm w-full h-64 bg-gray-700">
+
+         <div
+           className="flex items-center gap-2 text-gray-600 text-sm w-full h-96 bg-cover bg-center"
+           style={{ backgroundImage: `url(${Mbanner})` }}>
                 <div className="ml-56 ">
                 <h1 className="text-[48px] text-white font-serif">Menu</h1>
                 <br />
