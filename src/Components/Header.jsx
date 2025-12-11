@@ -2,6 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -37,17 +38,19 @@ function Header() {
         </div>
 
         <div className="grid grid-cols-6 text-black p-2 text-[16px]">
-          <a href="">Home</a>
-          <a href="">Menu</a>
+         <Link to="/">Home</Link>
+          <Link to="/menu">Menu</Link>
 
-          <select name="Information" className="bg-white mb-3">
-            <option value="">Information</option>
-            <option value="">Menu</option>
-            <option value="">About</option>
-          </select>
+          <select className="bg-white mb-3 w-28 px-2 py-1">
+  <option>Information</option>
+  <option value="/menu">Menu</option>
+  <option value="/about">About</option>
+</select>
 
-          <a href="" className="ml-8">Blog</a>
-          <a href="" className="mb-3">Contact</a>
+
+
+          <Link to="/blog" className="ml-8">Blog</Link>
+          <Link to="/contact" className="mb-3">Contact</Link>
 
           <button className="flex items-center gap-1 mr-2 h-10 hover:bg-orange-700 bg-orange-600 text-white rounded">
             <FaPhoneAlt className="text-sm ml-6" />
