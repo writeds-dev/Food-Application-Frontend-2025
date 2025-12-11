@@ -48,7 +48,7 @@ function Header() {
 </select>
 
 
-"hello"
+"hello code"
           <Link to="/blog" className="ml-8">Blog</Link>
           <Link to="/contact" className="mb-3">Contact</Link>
 
