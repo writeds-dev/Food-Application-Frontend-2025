@@ -7,57 +7,61 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      {/* header */}
-      <div className="grid grid-cols-2 bg-orange-600 text-white p-3">
+      {/* TOP BAR */}
+      <div className="flex justify-between bg-orange-600 text-white p-3 px-8 text-sm">
         <div>Welcome To Our Culinary Haven!</div>
 
-        <div className="flex gap-16 items-center">
-          
-          <a href="#" className="flex items-center gap-1">
+        <div className="flex items-center gap-8">
+          <div className="flex items-center gap-1">
             <MdEmail className="text-lg" />
             info@yoursite.com
-          </a>
+          </div>
 
-          <a href="#" className="flex items-center gap-1">
+          <div className="flex items-center gap-1">
             <FaPhoneAlt className="text-lg" />
             +91 97876xxxxx
-          </a>
+          </div>
 
-          <a href="#" className="flex items-center gap-1">
+          <div className="flex items-center gap-1">
             <FaLocationDot className="text-lg" />
             Mumbai
-          </a>
-
+          </div>
         </div>
       </div>
 
-      {/* navbar */}
-      <div className="grid grid-cols-2 text-[20px]">
-        <div>
-          <img src="" alt="LOGO  IMAGE" />
-        </div>
+      {/* NAVBAR */}
+      <nav className="w-full bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-10 py-3">
 
-        <div className="grid grid-cols-6 text-black p-2 text-[16px]">
-         <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
+          {/* LOGO */}
+          <div>
+            <img src="/logo.png" alt="LOGO" className="w-28" />
+          </div>
 
-          <select className="bg-white mb-3 w-28 px-2 py-1">
-  <option>Information</option>
-  <option value="/menu">Menu</option>
-  <option value="/about">About</option>
-</select>
+          {/* NAV LINKS */}
+          <div className="flex items-center gap-10 text-[17px] text-black">
 
+            <Link to="/" className="hover:text-orange-600">Home</Link>
+            <Link to="/menu" className="hover:text-orange-600">Menu</Link>
 
-"hello code"
-          <Link to="/blog" className="ml-8">Blog</Link>
-          <Link to="/contact" className="mb-3">Contact</Link>
+            {/* SIMPLE DROPDOWN */}
+            <select className="bg-white border rounded px-2 py-1 text-[15px] hover:cursor-pointer">
+              <option>Information</option>
+              <option value="/menu">Menu</option>
+              <option value="/about">About</option>
+            </select>
 
-          <button className="flex items-center gap-1 mr-2 h-10 hover:bg-orange-700 bg-orange-600 text-white rounded">
-            <FaPhoneAlt className="text-sm ml-6" />
-            Call Us
+            <Link to="/blog" className="hover:text-orange-600">Blog</Link>
+            <Link to="/contact" className="hover:text-orange-600">Contact</Link>
+
+            {/* CALL US BUTTON */}
+            <button className="flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">
+              <FaPhoneAlt className="text-sm" />
+              Call Us
             </button>
+          </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
