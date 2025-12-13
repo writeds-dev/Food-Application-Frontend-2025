@@ -1,108 +1,150 @@
-import React from "react";
-import img1 from '../assets/images/img1.jpg'
-function Resevation()
-{
+export default function Reservations(){
     return(
         <>
-        <div>
-        {/* breadcrum menu */}
-            <div className="flex items-center gap-2 text-gray-600 text-sm w-full h-64 bg-gray-700">
-                <div className="ml-56 ">
-                <h1 className="text-[48px] text-white font-serif">Reservation</h1>
-                <br />
-                <span className=" text-gray-400 font-serif">Home</span>
-                <span className="text-gray-400">/</span>
-                  <span className="text-orange-600 font-medium">Information</span>
-                  <span className="text-gray-400">/</span>
-                <span className="text-orange-600 font-medium">  Resevation</span>
-                </div>
-           </div>
-        <div>
-            
-           <div className="p-7 flex items-center flex-col justify-center ">
-            <div className="w-12 h-1 bg-orange-600"></div>
-            <div className="text-lg font-semibold text-gray-800">Online Reserve</div>
-            <div className="font-bold p-4 font-serif text-black text-[40px]">
-                <h1>Easy <span className="text-orange-600">Steps</span> to <span className="text-orange-600">Enjoyment</span></h1>
-            </div>
-        </div>
-        <div className="px-32">
-            <div className="bg-pink-200 rounded p-20">
-                <div className="flex justify-around gap-6 ">
-                    <input type="text" placeholder="Name" className="w-96 border-2 border-orange-400 rounded p-2" />
-                    <input type="text" placeholder="Phone" className="w-96 border-2 border-orange-400 rounded p-2"  />
-                </div>
-                
-                <div className="flex justify-around mt-8 gap-6">
-                 <input type="text" placeholder="people"  className="w-96 border-2 border-orange-400 rounded p-2" />
-                  <input type="date" placeholder="mm/dd/yyyy" className="w-96 border-2 border-orange-400 rounded p-2 text-gray-400" />
-                </div>
-                 <div className="flex justify-around mt-8 gap-6">
-                 <input type="text" placeholder="00:00 am"  className="w-96 border-2 border-orange-400 rounded p-2 " />
-                  <input type="date" placeholder="Email" className="w-96 border-2 border-orange-400 rounded p-2 text-gray-400" />
-                </div>
-                <div className="mt-5 flex items-center justify-center" >
-                    <button className="bg-orange-500 text-white w-80 rounded p-2">Reserve Now</button>
+{/* about section header wala page */}
+        <section>
+            <div className="bg-[url(./assets/Images/booking_banner.jpg)] bg-cover opacity-90 h-[520px] ">
+                <div className="px-32 pt-56">
+                <div className=" text-white text-[70px]  font-serif font-semibold">Reservation</div>
+
+               <div className="flex items-center gap-2 text-white text-sm mt-5">
+                 <span className="cursor-pointer hover:underline">Home</span>
+                <span>{">"}</span>
+                <span className="cursor-pointer hover:underline">Information</span>
+                <span>{">"}</span>
+                 <span className="text-orange-500 font-semibold">Reservation</span>
+                </div> 
                 </div>
             </div>
-         </div>
-         <div className="flex items-center gap-2 mt-5  text-gray-600 justify-center w-full  bg-gray-700">
-                <div className="mt-20">
-                <h1 className="text-[48px] text-white font-serif">Tuesday special <span className="text-orange-600">15% Off</span> For The Best <br /> 
-                <span className="ml-48">Flavour Adventure!</span></h1>
-                 <div className="">
-                    <div className="align-middle text-white ml-44">
-                        get 15% of  on Tuesday .Don't miss this ooportuninty to enjoy authentic <br />
-                        <pre className="ml-20">Indonesian dishes at the best prices.</pre></div>
-                    </div>
-                  <div className="mt-5 mb-7 flex items-center justify-center" >
-                    <button className="bg-orange-500 text-white w-80 rounded p-3">Reserve a Table Now!</button>
+        </section>  
+
+        {/* input form */}
+
+        <section>
+            <div>
+                <div className="flex items-center justify-center mt-10">
+                    <p className="bg-orange-500 h-[3px] w-[50px]"></p>
                 </div>
+
+                <div>
+                    <p className="text-center mt-5 tracking-widest">ONLINE RESERVE</p>
                 </div>
-           </div>   
-        <div className="p-5 flex items-center flex-col justify-center ">
-            <div className="w-12 h-1 bg-orange-600"></div>
-            <div className="text-lg font-semibold text-gray-800">Special Package Offers</div>
-            <div className="font-bold p-4 font-serif text-black text-[40px]">
-                <h1>Explore More <span className="text-orange-600">Delights</span> With <br /> <span className="text-orange-600 ml-12">Exclusive Meal</span> Packages  </h1>
-            </div>
-        </div>
-        <div className="flex flex-row p-12 ml-20 mr-20 gap-3">
-            <div className="border-2 border-dashed border-orange-600 flex flex-row">
-                 <div className=" w-[50%] p-3"> 
-                   <h1 className="text-orange-600 text-[20px]">Taste of Archipeleago</h1>
-                    <h1 className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sunt totam deserunt, .</h1>
-                    <ul className="list-disc ml-5 text-gray-700">
-                    <li>Traditional </li>
-                    <li>Beverages </li>
-                    <li>Desert's </li>
-                    </ul>
-                    <span className="ml-3 text-[20px] text-orange-600 font-bold">$ 12</span>
-                </div>
-                <div className="p-3 w-[50%]">
-                    <img src={img1} className="w-full h-full" alt="img1" />
+
+                  <div className="text-5xl font-bold">
+                    <p className="text-center mt-5 tracking-widest"> Easy <span className="text-orange-500">Steps</span>  to <span className="text-orange-500">Enjoyment</span></p>
                 </div>
             </div>
-             <div className="border-2 border-dashed border-orange-600 flex flex-row">
-                <div className=" w-[50%] p-3"> 
-                   <h1 className="text-orange-600 text-[20px]">Taste of Archipeleago</h1>
-                    <h1 className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sunt totam deserunt, .</h1>
-                    <ul className="list-disc ml-5 text-gray-700">
-                    <li>Traditional </li>
-                    <li>Beverages </li>
-                    <li>Desert's </li>
-                    </ul>
-                    <span className="ml-3 text-[20px] text-orange-600 font-bold">$ 12</span>
+        </section>
+
+{/* form */}
+        <section>
+            <div className="bg-orange-50 h-[500px] mt-20 mx-20">
+                <div>
+                    <form action="" className="grid grid-cols-2 gap-10 pt-28 p-20 ">
+                        <input type="text" className="border-orange-700 border-[2px] h-12 rounded-md text-gray-600 px-5" placeholder="Name" />
+                        <input type="text" className="border-orange-700 border-[2px] rounded-md text-gray-600 px-5" placeholder="Phone" />
+                        <input type="text" className="border-orange-700 border-[2px] h-12 rounded-md text-gray-600 px-5" placeholder="People"/>
+                        <input type="date" className="border-orange-700 border-[2px] rounded-md text-gray-600 px-5" placeholder="mm/dd/yy" />
+                        <input type="text" className="border-orange-700 border-[2px] h-12 rounded-md text-gray-600 px-5 " placeholder="00:00 am"/>
+                        <input type="text" className="border-orange-700 border-[2px] rounded-md text-gray-600 px-5" placeholder="Email" />
+                    </form>
                 </div>
-                <div className="p-3 w-[50%]">
-                    <img src={img1} className="w-full h-full" alt="img1" />
+
+                <div className="flex items-center justify-center">
+                    <button className="bg-orange-500 h-10 w-96 rounded-md text-white text-md">Reserve Now</button>
+                </div>     
+            </div>
+        </section>
+
+
+{/* heading */}
+        <section>
+            <div className="h-[600px] mt-20">
+                <div className="bg-[url(./assets/Images/discounbt.png)] h-[500px] bg-cover">
+
+                <div className="text-5xl text-white text-center font-bold pt-20">
+                    <p>Thrusday Special <span className="text-orange-600"> 15% Off </span>for the Best <br />Flavored Adventures!
+                    </p>
+                </div>
+                <div className="text-white mt-5">
+                     <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt atque voluptas praesentium <br />Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div className="text-white flex justify-center mt-20">
+                    <button className="bg-orange-600 h-10 w-96">Reserve a Table Now!</button>
+                </div>
                 </div>
             </div>
-        </div>   
-        </div>
-        
-        </div>
+        </section>
+
+{/* pictures section */}
+
+        <section> 
+            <div className="h-screen"> 
+                <div className="flex justify-center">
+                     <p className="bg-orange-600 h-[3px] w-[40px]"></p>
+                </div>
+
+                <div className="text-center mt-5 tracking-widest  font-semibold">
+                    <p>SPECIAL PACKAGE OFFERS</p>
+                </div>
+
+                <div className="text-5xl text-center mt-5 font-bold">
+                    <p>Explore More <span className="text-orange-600"> Delights</span> with <br />  <span className="text-orange-600">Exclusive Meal</span> Packages</p>
+                </div>
+
+{/* another part */}
+                <div className="grid grid-cols-2 gap-5 px-36 mt-20">
+                    <div className="col-span-1">
+                        <div className="border-[1px] border-dashed border-x-2 border-y-2 border-orange-600 h-[280px]">
+                               <div className="flex justify-center gap-10">
+
+                                <div className="pl-10 pt-10">
+                                 <p className="text-orange-600 text-xl font-semibold">Taste Of The Archipelago</p> 
+                                <p className="mt-2">
+                                Taste the culinary richness of the archipelago in one food package.
+                                </p>
+                                <ul className="mt-3 space-y-1 list-disc list-inside">
+                                <li>Main Course</li>
+                                <li>Traditional Beverage</li>
+                                <li>Signature Dessert</li>
+                                 </ul>
+                                </div>
+                               <div>
+                                    <div className="bg-[url(./assets/Images/ic01.webp)] bg-cover h-[250px] w-[250px] mx-5 mt-3 "></div>
+                               </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+
+                 <div className="col-span-1">
+                        <div className="border-[1px] border-dashed border-x-2 border-y-2 border-orange-600 h-[280px]">
+                               <div className="flex justify-center gap-10">
+
+                                <div className="pl-10 pt-10">
+                                 <p className="text-orange-600 text-xl font-semibold">Rendering Exploration</p> 
+                                <p className="mt-2">
+                              Choose this package and enjoy randang dishes in 5 differnt styles
+                                </p>
+                                <ul className="mt-3 space-y-1 list-disc list-inside">
+                                <li>Main Course</li>
+                                <li>Traditional Beverage</li>
+                                <li>Signature Dessert</li>
+                                 </ul>
+                                </div>
+                               <div>
+                                    <div className="bg-[url(./assets/Images/ic01.webp)] bg-cover h-[250px] w-[250px] mx-5 mt-3 "></div>
+                               </div>
+                         </div>
+                     </div>
+                 </div>
+
+                      
+                </div>
+            </div>
+        </section>
         </>
     )
 }
-export default Resevation;

@@ -1,5 +1,5 @@
 import React from "react";
-import banner from '../assets/images/banner1.webp';
+import blog from '../assets/images/blog.webp';
 import img1 from '../assets/images/img1.jpg'
 import img2 from '../assets/images/img2.jpg'
 import img3 from '../assets/images/img3.jpg'
@@ -17,7 +17,7 @@ function Blog() {
         {/* breadcrum menu */}
        <div
          className="flex items-center gap-2 text-gray-600 text-sm w-full h-96 bg-cover bg-center"
-         style={{ backgroundImage: `url(${banner})` }}>
+         style={{ backgroundImage: `url(${blog})` }}>
           <div className="ml-56 ">
             <h1 className="text-[48px] text-white font-serif">Blog</h1>
             <br />
