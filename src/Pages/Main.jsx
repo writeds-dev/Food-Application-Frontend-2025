@@ -38,8 +38,54 @@ import nds from '../assets/images/nds.webp'
 import migration from '../assets/images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg'
 import grill from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
 import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
+import { useEffect, useState } from "react";
 export default function Main(){
-  
+  const testimonials = [
+    {
+      text: "Best place for family dinner. Highly recommended.",
+      name: "Diya Sharma",
+      rating: 4,
+      bg: "bg-orange-600",
+      textColor: "text-white",
+    },
+    {
+      text: "Best place for family dinner. Highly recommended.",
+      name: "Diya Sharma",
+      rating: 5,
+      bg: "bg-white",
+      textColor: "text-gray-600",
+    },
+    {
+      text: "Amazing food quality and service. Totally loved it!",
+      name: "Aman Verma",
+      rating: 5,
+      bg: "bg-orange-600",
+      textColor: "text-white",
+    },
+    {
+      text: "Best place for family dinner. Highly recommended.",
+      name: "Neha Singh",
+      rating: 4,
+      bg: "bg-white",
+      textColor: "text-gray-600",
+    },
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  // AUTO SLIDE
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 2) % testimonials.length);
+    }, 3000); // 3 sec
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const visible = [
+    testimonials[index],
+    testimonials[(index + 1) % testimonials.length],
+  ];
     return(
         <>
 <div className="  bg-cover w-screen h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
@@ -404,83 +450,59 @@ export default function Main(){
 </div>
 </div>
 
-<div className="mt-4">
- <section className=" py-20 ">
-  {/* Heading */}
-  <div className="text-center max-w-4xl mx-auto">
-    <p className="tracking-widest text-sm text-gray-600">
-      OUR TESTIMONIALS
-    </p>
-
-    <h2 className="text-4xl font-bold mt-4">
-      Exploring <span className="text-orange-600">Ruchi&apos;s</span> Kitchen Treasure
-    </h2>
-  </div>
-
-  {/* Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-20">
-    
-    {/* Card 1 */}
-    <div className="bg-orange-600 text-white p-6 rounded-xl shadow-lg">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-        odio alias! Neque ducimus labore facere.
-      </p>
-
-      <div className="flex items-center justify-between mt-8">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gray-800"></div>
-          <span className="font-semibold">Diya Sharma</span>
-        </div>
-
-        <div className="flex text-yellow-400">
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={regularStar} />
-        </div>
+ <section className="py-20">
+      {/* Heading */}
+      <div className="text-center max-w-4xl mx-auto">
+        <p className="tracking-widest text-sm text-gray-600">OUR TESTIMONIALS</p>
+        <h2 className="text-4xl font-bold mt-4">
+          Exploring <span className="text-orange-600">Ruchi&apos;s</span> Kitchen Treasure
+        </h2>
       </div>
-    </div>
 
-    {/* Card 2 */}
-    <div className="bg-white p-6 rounded-xl shadow-lg">
-      <p className="text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        cupiditate fuga consequuntur recusandae.
-      </p>
+      {/* SLIDER */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-20 transition-all duration-500">
+        {visible.map((item, i) => (
+          <div
+            key={i}
+            className={`${item.bg} ${item.textColor} p-6 rounded-xl shadow-lg`}
+          >
+            <p>{item.text}</p>
 
-      <div className="flex items-center justify-between mt-8">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gray-800"></div>
-          <span className="font-semibold">Diya Sharma</span>
-        </div>
+            <div className="flex items-center justify-between mt-8">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gray-800"></div>
+                <span className="font-semibold">{item.name}</span>
+              </div>
 
-        <div className="flex text-yellow-400">
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-          <FontAwesomeIcon icon={solidStar} />
-        </div>
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, starIndex) =>
+                  starIndex < item.rating ? (
+                    <FontAwesomeIcon key={starIndex} icon={solidStar} />
+                  ) : (
+                    <FontAwesomeIcon key={starIndex} icon={regularStar} />
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
 
-  </div>
-
-  {/* Pagination */}
-  <div className="flex justify-center gap-4 mt-8">
-    {[1, 2, 3, 4].map(n => (
-      <button
-        key={n}
-        className="w-8 h-8 border border-orange-600 text-orange-600 rounded hover:bg-orange-600 hover:text-white transition"
-      >
-        {n}
-      </button>
-    ))}
-  </div>
-</section>
-</div>
+      {/* DOTS */}
+      <div className="flex justify-center gap-3 mt-10">
+        {testimonials.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`w-3 h-3 rounded-full ${
+              index === i || index + 1 === i
+                ? "bg-orange-600"
+                : "bg-gray-300"
+            }`}
+          ></button>
+        ))}
+      </div>
+    </section>
 
 <section className="py-20 bg-white px-32">
       {/* Heading */}
