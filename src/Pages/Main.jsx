@@ -403,7 +403,7 @@ export default function Main(){
 </div>
 </div>
 
-<div className="mt-40">
+<div className="mt-32">
  <section className=" py-20 ">
   {/* Heading */}
   <div className="text-center max-w-4xl mx-auto">
