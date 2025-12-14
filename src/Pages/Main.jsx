@@ -381,8 +381,8 @@ export default function Main(){
         </div>
 
 {/* right side col */}
-        <div className="col-span-3 pl-10">
-        <div className=" bg-[url(./assets/Images/nds.webp)] bg-contain h-[330px] w-[640px] mt-10" style ={{ backgroundImage: `url(${nds})`}}></div>
+        <div className="col-span-3 pl-10 mb-14 ">
+        <div className=" bg-[url(./assets/Images/nds.webp)] bg-contain h-[330px] w-[640px] mt-10 mb-10" style ={{ backgroundImage: `url(${nds})`}}></div>
 
         <div className="w-[640px]">
         <p className="text-sm  text-gray-600 pl-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -403,7 +403,7 @@ export default function Main(){
 </div>
 </div>
 
-<div className="mt-14">
+<div className="mt-4">
  <section className=" py-20 ">
   {/* Heading */}
   <div className="text-center max-w-4xl mx-auto">
@@ -481,7 +481,6 @@ export default function Main(){
 </section>
 </div>
 
-<div></div>
 <section className="py-20 bg-white px-32">
       {/* Heading */}
       <div className="text-center mb-12">
