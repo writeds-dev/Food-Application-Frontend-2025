@@ -94,7 +94,7 @@ export default function Main(){
 
               <div className="bg-[#F9E8DC] flex">
                 <div className="flex items-center p-5">
-                <div className="bg-[url(./assets/Images/canvas.png)] bg-cover h-28 w-24 " style ={{ backgroundImage: `url(${canvas})`}}></div>
+                <div className=" bg-cover h-28 w-24 " style ={{ backgroundImage: `url(${canvas})`}}></div>
                 </div>
                 <div className="p-3">
                     <p className="text-orange-500 text-2xl font-bold">Main Dishes</p>
@@ -107,7 +107,7 @@ export default function Main(){
 
               <div className="bg-[#F9E8DC] flex">
                 <div className="flex items-center p-5">
-                <div className="bg-[url('./assets/Images/canvas1.png')] bg-cover h-28 w-24" style ={{ backgroundImage: `url(${canvas1})`}}></div>
+                <div className=" bg-cover h-28 w-24" style ={{ backgroundImage: `url(${canvas1})`}}></div>
                 </div>
                 <div className="p-3">
                     <p className="text-orange-500 text-2xl font-bold">Snacks</p>
@@ -136,14 +136,14 @@ export default function Main(){
 
 
     <div className="grid  grid-cols-4 mt-4 gap-4">
-        <div className="bg-[url('./assets/Images/2aut47ag_north-indian-food_625x300_28_March_25.jpg')] bg-cover h-48"  style ={{ backgroundImage: `url(${img1})`}}></div>
-        <div className="bg-[url('./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img2})`}}></div>
-        <div className="bg-[url('./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img3})`}} ></div>
-        <div className="bg-[url('./assets/Images/')] bg-cover h-48" style ={{ backgroundImage: `url(${img4})`}}></div>
-        <div className="bg-[url('./assets/Images/')] bg-cover h-48"  style ={{ backgroundImage: `url(${img5})`}}></div>
-        <div className="bg-[url('./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg')] bg-cover h-48" style ={{ backgroundImage: `url(${img6})`}}></div>
-        <div className="bg-[url('./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img7})`}}></div>
-        <div className="bg-[url('')] bg-cover h-48" style ={{ backgroundImage: `url(${img8})`}}></div>
+        <div className=" bg-cover h-48"  style ={{ backgroundImage: `url(${img1})`}}></div>
+        <div className="bg-cover h-48" style ={{ backgroundImage: `url(${img2})`}}></div>
+        <div className=" bg-cover h-48" style ={{ backgroundImage: `url(${img3})`}} ></div>
+        <div className=" bg-cover h-48" style ={{ backgroundImage: `url(${img4})`}}></div>
+        <div className=" bg-cover h-48"  style ={{ backgroundImage: `url(${img5})`}}></div>
+        <div className=" bg-cover h-48" style ={{ backgroundImage: `url(${img6})`}}></div>
+        <div className=" bg-cover h-48" style ={{ backgroundImage: `url(${img7})`}}></div>
+        <div className=" bg-cover h-48" style ={{ backgroundImage: `url(${img8})`}}></div>
     </div>   
 </div>
 
@@ -173,7 +173,7 @@ export default function Main(){
             </div>
             </div>
              <div className="flex relative">
-            <div className="bg-[url('./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp')] bg-cover w-[630px] h-[600px] mt-32 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
+            <div className=" bg-cover w-[630px] h-[600px] mt-32 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
             <div  className="h-[500px] w-72 flex justify-end items-end mt-6 absolute ml-[480px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
         </div>
     </div>
@@ -194,15 +194,15 @@ export default function Main(){
 
     <div className="grid grid-cols-3 px-[270px] mt-20">
         <div>
-            <div className="bg-[url(./assets/Images/)] bg-cover rounded-md  h-[200px] w-80" style ={{ backgroundImage: `url(${indian})`}}></div>
+            <div className=" bg-cover rounded-md  h-[200px] w-80" style ={{ backgroundImage: `url(${indian})`}}></div>
         </div>
 
         <div > 
-            <div className="bg-[url(./assets/Images/)] bg-cover h-[200px] rounded-md w-80" style ={{ backgroundImage: `url(${indian1})`}}></div>
+            <div className=" bg-cover h-[200px] rounded-md w-80" style ={{ backgroundImage: `url(${indian1})`}}></div>
          </div>
 
         <div >
-        <div className="bg-[url(./assets/Images/)] rounded-md bg-cover h-[200px] w-80" style ={{ backgroundImage: `url(${recipe})`}}></div>
+        <div className=" rounded-md bg-cover h-[200px] w-80" style ={{ backgroundImage: `url(${recipe})`}}></div>
         </div>
 
         {/* text under images */}
@@ -271,7 +271,7 @@ export default function Main(){
 
       <div className="grid grid-cols-4 gap-4 px-36">
             <div className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${unhealthy})`}}></div>
+                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${unhealthy})`}}></div>
                 <div>
                 <p className="text-orange-400 font-bold mx-4">Burger</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -291,7 +291,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h[300px]">
-                <div className="bg-[url(./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${traditional})`}}></div>
+                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${traditional})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Mix Veg</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -300,7 +300,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${veg})`}}></div>
+                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${veg})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Machio</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -309,7 +309,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${health})`}}></div>
+                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${health})`}}></div>
                   <div >
                 <p className="text-orange-400 font-bold mx-4">Vegetables</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -318,7 +318,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${vegan1})`}}></div>
+                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${vegan1})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Lenticles</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -327,7 +327,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${istock})`}}></div>
+                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${istock})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Pizza</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -336,7 +336,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/pexels-ella-olsson-572949-1640777.jpg)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${ella})`}}></div>
+                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${ella})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Salad</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -361,7 +361,7 @@ export default function Main(){
         <p className="text-5xl font-bold">Discover Why Ruchi's <br /> Kitchen Is the <br /> <span className="text-orange-500"> Preferred Culinary </span><br /> Destination</p>
         </div>
 
-        <div className="bg-[url(./assets/Images/chef.jpeg)] bg-cover h-[300px] mt-32 " style ={{ backgroundImage: `url(${chef})`}}></div>
+        <div className=" bg-cover h-[300px] mt-32 " style ={{ backgroundImage: `url(${chef})`}}></div>
         </div>
 
 {/* right side col */}
@@ -405,7 +405,7 @@ export default function Main(){
 
                 <div className="flex justify-between">
                     <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
+                    <p className=" bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
                 </div>
             </div>
    <div className="bg-white h-52 p-5 rounded shadow-2xl shadow-black">
@@ -416,7 +416,7 @@ export default function Main(){
 
                 <div className="flex justify-between ">
                     <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
+                    <p className=" bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
                 </div>
             </div>
     </div>
@@ -445,7 +445,7 @@ export default function Main(){
       <div className="grid grid-cols-3 gap-8 px-4  ">
         {/* Card 1 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className=" rounded-lg bg-[url(./assets/Images/)] bg-cover h-60" style ={{ backgroundImage: `url(${migration})`}}>
+        <div className=" rounded-lg bg-cover h-60" style ={{ backgroundImage: `url(${migration})`}}>
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Savor the Flavor: A Deep Dive Into Veg 
@@ -472,7 +472,7 @@ export default function Main(){
 
         {/* Card 2 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className="bg-[url(./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg)] bg-cover h-60 rounded" style ={{ backgroundImage: `url(${grill})`}}>
+        <div className=" bg-cover h-60 rounded" style ={{ backgroundImage: `url(${grill})`}}>
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Quick and Delicious: 30-Minute Meals for Busy Days
@@ -499,7 +499,7 @@ export default function Main(){
     </div>
         {/* Card 3 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className="bg-[url(./assets/Images/istockphoto-104704117-612x612.jpg)] bg-cover h-60 rounded ">
+        <div className="bg-cover h-60 rounded ">
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Catering Perfection: Tips and Recipes for Your Event
