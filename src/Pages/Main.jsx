@@ -404,35 +404,35 @@ export default function Main(){
 </div>
 </div>
 
- <div className="mt-16 px-10">
+ <section className="bg-[#FFF1DE] py-20">
+  {/* Heading */}
+  <div className="text-center max-w-4xl mx-auto">
+    <p className="tracking-widest text-sm text-gray-600">
+      OUR TESTIMONIALS
+    </p>
 
-  {/* heading */}
-  <div className="flex flex-col items-center gap-3">
-    <div className="bg-orange-600 h-1 w-10"></div>
-    <span className="tracking-widest text-sm">OUR TESTIMONIALS</span>
-
-    <h1 className="text-3xl font-serif text-center">
-      Exploring <span className="text-orange-600">Ruchi's</span> Kitchen Treasure
-    </h1>
+    <h2 className="text-4xl font-bold mt-4">
+      Exploring <span className="text-orange-600">Ruchi&apos;s</span> Kitchen Treasure
+    </h2>
   </div>
 
-  {/* testimonials */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-
-    {/* card 1 */}
-    <div className="bg-orange-600 text-white rounded-lg p-6 shadow-lg">
-      <p className="text-sm leading-relaxed">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
-        odio alias! Neque ducimus labore facere ab maxime.
+  {/* Cards */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-20">
+    
+    {/* Card 1 */}
+    <div className="bg-orange-600 text-white p-6 rounded-xl shadow-lg">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+        odio alias! Neque ducimus labore facere.
       </p>
 
-      <div className="flex items-center justify-between mt-6">
+      <div className="flex items-center justify-between mt-8">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gray-800 border"></div>
+          <div className="w-10 h-10 rounded-full bg-gray-800"></div>
           <span className="font-semibold">Diya Sharma</span>
         </div>
 
-        <div className="flex gap-1 text-yellow-400 text-lg">
+        <div className="flex text-yellow-400">
           <FontAwesomeIcon icon={solidStar} />
           <FontAwesomeIcon icon={solidStar} />
           <FontAwesomeIcon icon={solidStar} />
@@ -442,20 +442,20 @@ export default function Main(){
       </div>
     </div>
 
-    {/* card 2 */}
-    <div className="bg-white text-gray-700 rounded-lg p-6 shadow-lg">
-      <p className="text-sm leading-relaxed">
+    {/* Card 2 */}
+    <div className="bg-white p-6 rounded-xl shadow-lg">
+      <p className="text-gray-600">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        cupiditate fuga consequuntur recusandae quo debitis.
+        cupiditate fuga consequuntur recusandae.
       </p>
 
-      <div className="flex items-center justify-between mt-6">
+      <div className="flex items-center justify-between mt-8">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gray-800 border"></div>
+          <div className="w-10 h-10 rounded-full bg-gray-800"></div>
           <span className="font-semibold">Diya Sharma</span>
         </div>
 
-        <div className="flex gap-1 text-yellow-400 text-lg">
+        <div className="flex text-yellow-400">
           <FontAwesomeIcon icon={solidStar} />
           <FontAwesomeIcon icon={solidStar} />
           <FontAwesomeIcon icon={solidStar} />
@@ -467,15 +467,18 @@ export default function Main(){
 
   </div>
 
-  {/* pagination */}
-  <div className="flex justify-center gap-4 mt-10">
-    <button className="bg-orange-600 text-white w-8 h-8 rounded">1</button>
-    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">2</button>
-    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">3</button>
-    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">4</button>
+  {/* Pagination */}
+  <div className="flex justify-center gap-4 mt-12">
+    {[1, 2, 3, 4].map(n => (
+      <button
+        key={n}
+        className="w-8 h-8 border border-orange-600 text-orange-600 rounded hover:bg-orange-600 hover:text-white transition"
+      >
+        {n}
+      </button>
+    ))}
   </div>
-
-</div>
+</section>
 
 
 
