@@ -47,8 +47,8 @@ export default function Main(){
             <Link to={"/blogs"}  className="text-white font-bold">Blog</Link >
             <Link to={"/contact"} className="text-white font-bold">Contact</Link>
             <li className="text-white font-bold">Catering</li>
-            <button className="bg-orange-600 text-white w-24 h-8 rounded-lg hover:scale-110 transition-transform duration-200 animate-pulset flex items-center justify-center gap-2">
-                 <i class="fi fi-rr-phone-call"></i>
+            <button className="bg-orange-600 text-white w-24 h-8 rounded-lg hover:scale-110 transition-transform duration-200 animate-pulse flex items-center justify-center gap-2">
+                 <i className="fi fi-rr-phone-call"></i>
                  Call Us
                  </button> 
         </ul>
@@ -161,8 +161,6 @@ export default function Main(){
                 Aromas of <span className="text-orange-500"> Ruchie Priya<br />
                 kitchen </span> </p>
             </div>
-
-2
             <div>
                 <p className="text-justify mt-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                      Omnis exercitationem nemo, tempore, perferendis excepturi
@@ -290,7 +288,7 @@ export default function Main(){
 
 
 
-            <div  className="border-[1px] border-orange-400 h[300px]">
+            <div  className="border-[1px] border-orange-400 h-[300px]">
                 <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${traditional})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Mix Veg</p>
