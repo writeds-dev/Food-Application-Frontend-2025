@@ -362,8 +362,7 @@ export default function Main(){
         </div>
   
 
-  
-          <div className="h-screen bg-orange-100 mt-20">
+   <div className="h-full bg-orange-100 mt-20">
         <div className="grid grid-cols-5 px-40 gap-2">
         <div className="col-span-2 pl-">
 
