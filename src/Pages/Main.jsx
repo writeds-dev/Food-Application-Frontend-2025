@@ -182,7 +182,7 @@ export default function Main(){
 
 
 <div>
-    <div className="py-20">
+    <div className="py-20 mt-40">
   <div className="flex items-center justify-center text-center">
     <p className="text-black text-5xl font-bold leading-tight">
       <span className="text-orange-500">Navigate</span> Your <br />
