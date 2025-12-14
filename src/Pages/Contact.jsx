@@ -2,13 +2,15 @@ import { Mail, Phone, MapPin, X } from "lucide-react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import img1 from '../assets/images/traditional-italian-food-world-tourism-day_23-2149114038.avif'
+import img2 from '../assets/images/hi7-food-delivery-suryapet-nvbk6vythv.avif'
 
 export default function Contact(){
     return(
         <>
              <section>
-            <div className="bg-[url(./assets/Images/traditional-italian-food-world-tourism-day_23-2149114038.avif)] bg-cover bg-center h-[520px] ">
+            <div className=" bg-cover bg-center h-[520px] " style={{ backgroundImage: `url(${img1})` }}
+>
                 <div className="px-32 pt-56">
                 <div className=" text-white text-[70px]  font-serif font-semibold">Contact</div>
 
@@ -128,7 +130,8 @@ export default function Contact(){
 
 
 <section>
-  <div className="h-[700px] bg-[url(./assets/Images/hi7-food-delivery-suryapet-nvbk6vythv.avif)] bg-no-repeat bg-right">
+  <div className="h-[700px]  bg-no-repeat bg-right" style={{ backgroundImage: `url(${img2})` }}
+>
 
   </div>
 </section>
