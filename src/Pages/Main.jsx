@@ -1,4 +1,8 @@
 import { CalendarDays, MessageSquare } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -30,7 +34,7 @@ import health from '../assets/images/article_291139_the-top-10-healthiest-foods-
 import ella from '../assets/images/pexels-ella-olsson-572949-1640777.jpg'
 import chef from '../assets/images/chef.jpeg'
 import nds from '../assets/images/nds.webp'
-import star from '../assets/images/star.jpg'
+// import star from '../assets/images/star.jpg'
 import migration from '../assets/images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg'
 import grill from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
 import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
@@ -177,66 +181,81 @@ export default function Main(){
     </div>
 
 
+<div>
+    <div className="py-20">
+  <div className="flex items-center justify-center text-center">
+    <p className="text-black text-5xl font-bold leading-tight">
+      <span className="text-orange-500">Navigate</span> Your <br />
+      Cuisine Journey
+    </p>
+  </div>
 
-    <div className="flex items-center justify-center mt-20">
-       <p className="text-black text-5xl font-bold"> <span className="text-orange-500">Navigate</span> Your <br />
-       Cusine Journey</p>
-       </div>
-       <div className="flex items-center justify-center mt-8 text-center  max-w-screen-md mx-auto">
-       <p className="text text-sm tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perferendis, culpa delectus quia iusto cumque repellendus dicta optio dolorum nam possimus molestias fugiat eligendi at. Deleniti corrupti quam sint veritatis. Inventore eaque, facere ab voluptatibus magnam ex perspiciatis esse. Possimus.
-       </p>
+  <div className="flex items-center justify-center mt-8 text-center max-w-screen-md mx-auto">
+    <p className="text-sm tracking-wide">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Quo perferendis, culpa delectus quia iusto cumque repellendus dicta.
+    </p>
+  </div>
+</div>
+
+
+
+</div>   
+
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 md:px-32 mt-20">
+
+  {/* CARD 1 */}
+  <div className="text-center space-y-4">
+    <div
+      className="bg-cover bg-center rounded-md h-[200px] w-full"
+      style={{ backgroundImage: `url(${indian})` }}
+    ></div>
+
+    <div className="bg-gray-300 h-11 flex items-center justify-center">
+      <p className="text-xl font-semibold">Catering Services</p>
     </div>
 
+    <p className="text-sm text-gray-600 px-4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolores
+      porro amet eos soluta consequuntur sapiente.
+    </p>
+  </div>
 
+  {/* CARD 2 */}
+  <div className="text-center space-y-4">
+    <div
+      className="bg-cover bg-center rounded-md h-[200px] w-full"
+      style={{ backgroundImage: `url(${indian1})` }}
+    ></div>
 
-
-    <div className="grid grid-cols-3 px-[270px] mt-20">
-        <div>
-            <div className=" bg-cover rounded-md  h-[200px] w-80" style ={{ backgroundImage: `url(${indian})`}}></div>
-        </div>
-
-        <div > 
-            <div className=" bg-cover h-[200px] rounded-md w-80" style ={{ backgroundImage: `url(${indian1})`}}></div>
-         </div>
-
-        <div >
-        <div className=" rounded-md bg-cover h-[200px] w-80" style ={{ backgroundImage: `url(${recipe})`}}></div>
-        </div>
-
-        {/* text under images */}
-        <div className="flex items-center justify-center mt-8">
-        <div className="bg-gray-300 h-11 w-[290px]">
-            <p className="text-3xl text-center font-semibold">Catering Services</p>
-        </div>
-        </div>
-
-
-         <div className="flex items-center justify-center mt-8">
-        <div className="bg-gray-300 h-11 w-[290px] ">
-            <p className="text-3xl text-center font-semibold">Dine in & TakeWay</p>
-        </div>
-        </div>
-
-       
-        <div className="flex items-center justify-center mt-8">
-        <div className="bg-gray-300 h-11 w-[290px] ">
-            <p className="text-3xl text-center font-semibold">Veg & Non-Veg</p>
-        </div>
-        </div>
-
-
-        <div className=" text-sm max-w-72 mx-auto">
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolores porro amet eos soluta consequuntur sapiente unde eligendi, dolorum ab alias laboriosam beatae quae pariatur ullam quia velit quis. Obcaecati.</p>
-        </div>
-
-        <div className=" text-sm max-w-72 mx-auto">
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum voluptate quae incidunt? Maxime, exercitationem quam consequuntur ullam, veniam mollitia iste voluptas tenetur sed nam atque vero ad alias illum.</p>
-        </div>
-
-        <div className=" text-sm max-w-72 mx-auto">
-        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt debitis laudantium odio! Laudantium natus reprehenderit incidunt quis, impedit officiis omnis repudiandae labore dolor quasi nemo inventore aperiam </p>
-        </div>
+    <div className="bg-gray-300 h-11 flex items-center justify-center">
+      <p className="text-xl font-semibold">Dine In & Take Away</p>
     </div>
+
+    <p className="text-sm text-gray-600 px-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum
+      voluptate quae incidunt.
+    </p>
+  </div>
+
+  {/* CARD 3 */}
+  <div className="text-center space-y-4">
+    <div
+      className="bg-cover bg-center rounded-md h-[200px] w-full"
+      style={{ backgroundImage: `url(${recipe})` }}
+    ></div>
+
+    <div className="bg-gray-300 h-11 flex items-center justify-center">
+      <p className="text-xl font-semibold">Veg & Non-Veg</p>
+    </div>
+
+    <p className="text-sm text-gray-600 px-4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+      debitis laudantium odio.
+    </p>
+  </div>
+
+</div>
 
 
 
@@ -385,45 +404,79 @@ export default function Main(){
 </div>
 </div>
 
-<div>
-    <div className="flex justify-center mt-5">
-         <div className="bg-orange-500 h-1 w-8"></div>
-    </div>
-        <div className="text-center mt-2">OUR TESTIMONIAL</div>
+ <div className="mt-16 px-10">
 
-        <p className="text-5xl font-bold text-center mt-6">Exploring <span className="text-orange-500"> Ruchi's</span> Kitchen Treasures</p>
-    </div>
-        
-    <div className="grid grid-cols-2 px-20 gap-10 mt-16">
-        <div className="bg-orange-600 h-52 p-5 rounded">
-            <p className="text-white ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat 
-                 adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel
-                  in aut? Iure?</p>
+  {/* heading */}
+  <div className="flex flex-col items-center gap-3">
+    <div className="bg-orange-600 h-1 w-10"></div>
+    <span className="tracking-widest text-sm">OUR TESTIMONIALS</span>
 
-                <div className="flex justify-between">
-                    <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className=" bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
-                </div>
-            </div>
-   <div className="bg-white h-52 p-5 rounded shadow-2xl shadow-black">
-            <p className="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat 
-                 adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel
-                  in aut? Iure?</p>
+    <h1 className="text-3xl font-serif text-center">
+      Exploring <span className="text-orange-600">Ruchi's</span> Kitchen Treasure
+    </h1>
+  </div>
 
-                <div className="flex justify-between ">
-                    <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className=" bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
-                </div>
-            </div>
+  {/* testimonials */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+
+    {/* card 1 */}
+    <div className="bg-orange-600 text-white rounded-lg p-6 shadow-lg">
+      <p className="text-sm leading-relaxed">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+        odio alias! Neque ducimus labore facere ab maxime.
+      </p>
+
+      <div className="flex items-center justify-between mt-6">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-gray-800 border"></div>
+          <span className="font-semibold">Diya Sharma</span>
+        </div>
+
+        <div className="flex gap-1 text-yellow-400 text-lg">
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={regularStar} />
+        </div>
+      </div>
     </div>
 
-    <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
-        <button className="bg-orange-500 h-4 w-4 rounded-full"></button>
-        <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>
-        <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>  
+    {/* card 2 */}
+    <div className="bg-white text-gray-700 rounded-lg p-6 shadow-lg">
+      <p className="text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        cupiditate fuga consequuntur recusandae quo debitis.
+      </p>
+
+      <div className="flex items-center justify-between mt-6">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-gray-800 border"></div>
+          <span className="font-semibold">Diya Sharma</span>
+        </div>
+
+        <div className="flex gap-1 text-yellow-400 text-lg">
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+          <FontAwesomeIcon icon={solidStar} />
+        </div>
+      </div>
     </div>
+
+  </div>
+
+  {/* pagination */}
+  <div className="flex justify-center gap-4 mt-10">
+    <button className="bg-orange-600 text-white w-8 h-8 rounded">1</button>
+    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">2</button>
+    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">3</button>
+    <button className="border border-orange-600 text-orange-600 w-8 h-8 rounded">4</button>
+  </div>
+
+</div>
+
 
 
 <section className="py-20 bg-white px-32">
