@@ -377,7 +377,7 @@ export default function Main(){
         <p className="text-5xl font-bold">Discover Why Ruchi's <br /> Kitchen Is the <br /> <span className="text-orange-500"> Preferred Culinary </span><br /> Destination</p>
         </div>
 
-        <div className=" bg-cover h-[300px] mt-32 " style ={{ backgroundImage: `url(${chef})`}}></div>
+        <div className=" bg-cover h-[300px] mt-14 " style ={{ backgroundImage: `url(${chef})`}}></div>
         </div>
 
 {/* right side col */}
