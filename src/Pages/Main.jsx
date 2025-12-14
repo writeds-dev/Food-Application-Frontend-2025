@@ -403,8 +403,8 @@ export default function Main(){
 </div>
 </div>
 
-<div className="mt-60">
- <section className="bg-[#FFF1DE] py-20 ">
+<div className="mt-52">
+ <section className=" py-20 ">
   {/* Heading */}
   <div className="text-center max-w-4xl mx-auto">
     <p className="tracking-widest text-sm text-gray-600">
