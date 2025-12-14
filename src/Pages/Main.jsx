@@ -6,11 +6,38 @@ import {  FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
-
+import worldMap from '../assets/images/vector-map-world-square-dots-260nw-1937582827.webp'
+import banner from '../assets/images/p.jpg'
+import canvas from '../assets/images/canvas3.png'
+import canvas1 from '../assets/images/canvas1.png'
+import img1 from '../assets/images/2aut47ag_north-indian-food_625x300_28_March_25.jpg'
+import img2 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
+import vegan from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
+import img3 from '../assets/images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp'
+import veg from '../assets/images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp'
+import img4 from '../assets/images/famous-indian-food-dishes-that-are-delicious-and-must-try-for-tourists.jpg'
+import img5 from '../assets/images/famous-indian-food-dishes-that-are-delicious-and-must-try-for-tourists.jpg'
+import img6 from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
+import img7 from '../assets/images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp'
+import img8 from '../assets/images/istockphoto-104704117-612x612.jpg'
+import recipe from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
+import traditional from '../assets/images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp'
+import istock from '../assets/images/istockphoto-104704117-612x612.jpg'
+import unhealthy from '../assets/images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp'
+import indian from '../assets/images/feature-image-famous-dishes-of-delhi.jpg'
+import indian1 from '../assets/images/2aut47ag_north-indian-food_625x300_28_March_25.jpg'
+import health from '../assets/images/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg'
+import ella from '../assets/images/pexels-ella-olsson-572949-1640777.jpg'
+import chef from '../assets/images/chef.jpeg'
+import nds from '../assets/images/nds.webp'
+import star from '../assets/images/star.jpg'
+import migration from '../assets/images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg'
+import grill from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
+import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
 export default function Main(){
     return(
         <>
-<div className=" bg-[url('./assets/Images/p.jpg')] bg-cover w-screen h-[700px]">
+<div className="  bg-cover w-screen h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
     <div className="bg-black h-24 flex  items-center justify-around bg-opacity-30">
         <div className="text-3xl font-extrabold text-white">F O O D C O U R T</div>
         <div>
@@ -53,7 +80,7 @@ export default function Main(){
     <div className="grid grid-cols-3 gap-4 h-30">
             <div className="bg-[#F9E8DC] flex">
                 <div className="flex items-center p-5">
-                <div className="bg-[url(./assets/Images/canvas3.png)] bg-cover h-28 w-24"></div>
+                <div className=" bg-cover h-28 w-24" style={{ backgroundImage: `url(${canvas})` }}></div>
                 </div>
                 <div className="p-3">
                     <p className="text-orange-500 text-2xl font-bold">Beverages</p>
@@ -67,7 +94,7 @@ export default function Main(){
 
               <div className="bg-[#F9E8DC] flex">
                 <div className="flex items-center p-5">
-                <div className="bg-[url(./assets/Images/canvas.png)] bg-cover h-28 w-24 "></div>
+                <div className="bg-[url(./assets/Images/canvas.png)] bg-cover h-28 w-24 " style ={{ backgroundImage: `url(${canvas})`}}></div>
                 </div>
                 <div className="p-3">
                     <p className="text-orange-500 text-2xl font-bold">Main Dishes</p>
@@ -80,14 +107,15 @@ export default function Main(){
 
               <div className="bg-[#F9E8DC] flex">
                 <div className="flex items-center p-5">
-                <div className="bg-[url(./assets/Images/canvas1.png)] bg-cover h-28 w-24"></div>
+                <div className="bg-[url('./assets/Images/canvas1.png')] bg-cover h-28 w-24" style ={{ backgroundImage: `url(${canvas1})`}}></div>
                 </div>
                 <div className="p-3">
                     <p className="text-orange-500 text-2xl font-bold">Snacks</p>
                     <p className="text-sm mt-3">
                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quasi itaque debitis, consequatur numquam aut quibusdam.
-                         Odio expedita dignissimos hic odit!</p>
+                         Odio expedita dignissimos hic odit!
+                    </p>
                 </div>
             </div>
         </div>
@@ -108,14 +136,14 @@ export default function Main(){
 
 
     <div className="grid  grid-cols-4 mt-4 gap-4">
-        <div className="bg-[url(./assets/Images/2aut47ag_north-indian-food_625x300_28_March_25.jpg)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/famous-indian-food-dishes-that-are-delicious-and-must-try-for-tourists.jpg)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/feature-image-famous-dishes-of-delhi.jpg)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp)] bg-cover h-48"></div>
-        <div className="bg-[url(./assets/Images/istockphoto-104704117-612x612.jpg)] bg-cover h-48"></div>
+        <div className="bg-[url('./assets/Images/2aut47ag_north-indian-food_625x300_28_March_25.jpg')] bg-cover h-48"  style ={{ backgroundImage: `url(${img1})`}}></div>
+        <div className="bg-[url('./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img2})`}}></div>
+        <div className="bg-[url('./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img3})`}} ></div>
+        <div className="bg-[url('./assets/Images/')] bg-cover h-48" style ={{ backgroundImage: `url(${img4})`}}></div>
+        <div className="bg-[url('./assets/Images/')] bg-cover h-48"  style ={{ backgroundImage: `url(${img5})`}}></div>
+        <div className="bg-[url('./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg')] bg-cover h-48" style ={{ backgroundImage: `url(${img6})`}}></div>
+        <div className="bg-[url('./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp')] bg-cover h-48" style ={{ backgroundImage: `url(${img7})`}}></div>
+        <div className="bg-[url('')] bg-cover h-48" style ={{ backgroundImage: `url(${img8})`}}></div>
     </div>   
 </div>
 
@@ -134,7 +162,7 @@ export default function Main(){
                 kitchen </span> </p>
             </div>
 
-
+2
             <div>
                 <p className="text-justify mt-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                      Omnis exercitationem nemo, tempore, perferendis excepturi
@@ -145,7 +173,7 @@ export default function Main(){
             </div>
             </div>
              <div className="flex relative">
-            <div className="bg-[url('./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp')] bg-cover w-[630px] h-[600px] mt-32 absolute z-10"> </div>
+            <div className="bg-[url('./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp')] bg-cover w-[630px] h-[600px] mt-32 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
             <div  className="h-[500px] w-72 flex justify-end items-end mt-6 absolute ml-[480px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
         </div>
     </div>
@@ -166,15 +194,15 @@ export default function Main(){
 
     <div className="grid grid-cols-3 px-[270px] mt-20">
         <div>
-            <div className="bg-[url(./assets/Images/famous-indian-food-dishes-that-are-delicious-and-must-try-for-tourists.jpg)] bg-cover rounded-md  h-[200px] w-80"></div>
+            <div className="bg-[url(./assets/Images/)] bg-cover rounded-md  h-[200px] w-80" style ={{ backgroundImage: `url(${indian})`}}></div>
         </div>
 
         <div > 
-            <div className="bg-[url(./assets/Images/2aut47ag_north-indian-food_625x300_28_March_25.jpg)] bg-cover h-[200px] rounded-md w-80"></div>
+            <div className="bg-[url(./assets/Images/)] bg-cover h-[200px] rounded-md w-80" style ={{ backgroundImage: `url(${indian1})`}}></div>
          </div>
 
         <div >
-        <div className="bg-[url(./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg)] rounded-md bg-cover h-[200px] w-80"></div>
+        <div className="bg-[url(./assets/Images/)] rounded-md bg-cover h-[200px] w-80" style ={{ backgroundImage: `url(${recipe})`}}></div>
         </div>
 
         {/* text under images */}
@@ -243,7 +271,7 @@ export default function Main(){
 
       <div className="grid grid-cols-4 gap-4 px-36">
             <div className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${unhealthy})`}}></div>
                 <div>
                 <p className="text-orange-400 font-bold mx-4">Burger</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -263,7 +291,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h[300px]">
-                <div className="bg-[url(./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${traditional})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Mix Veg</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -272,7 +300,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${veg})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Machio</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -281,7 +309,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${health})`}}></div>
                   <div >
                 <p className="text-orange-400 font-bold mx-4">Vegetables</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -290,7 +318,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${vegan1})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Lenticles</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -299,7 +327,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/istockphoto-104704117-612x612.jpg)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${istock})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Pizza</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -308,7 +336,7 @@ export default function Main(){
 
 
             <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(./assets/Images/pexels-ella-olsson-572949-1640777.jpg)] bg-cover h-[200px]"></div>
+                <div className="bg-[url(./assets/Images/pexels-ella-olsson-572949-1640777.jpg)] bg-cover h-[200px]" style ={{ backgroundImage: `url(${ella})`}}></div>
                   <div>
                 <p className="text-orange-400 font-bold mx-4">Salad</p>
                 <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
@@ -333,12 +361,12 @@ export default function Main(){
         <p className="text-5xl font-bold">Discover Why Ruchi's <br /> Kitchen Is the <br /> <span className="text-orange-500"> Preferred Culinary </span><br /> Destination</p>
         </div>
 
-        <div className="bg-[url(./assets/Images/chef.jpeg)] bg-cover h-[300px] mt-32 "></div>
+        <div className="bg-[url(./assets/Images/chef.jpeg)] bg-cover h-[300px] mt-32 " style ={{ backgroundImage: `url(${chef})`}}></div>
         </div>
 
 {/* right side col */}
         <div className="col-span-3 pl-10">
-        <div className=" bg-[url(./assets/Images/nds.webp)] bg-contain h-[330px] w-[640px] mt-10"></div>
+        <div className=" bg-[url(./assets/Images/nds.webp)] bg-contain h-[330px] w-[640px] mt-10" style ={{ backgroundImage: `url(${nds})`}}></div>
 
         <div className="w-[640px]">
         <p className="text-sm mt-16 text-gray-600 pl-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -377,7 +405,7 @@ export default function Main(){
 
                 <div className="flex justify-between">
                     <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10"></p>
+                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
                 </div>
             </div>
    <div className="bg-white h-52 p-5 rounded shadow-2xl shadow-black">
@@ -388,7 +416,7 @@ export default function Main(){
 
                 <div className="flex justify-between ">
                     <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10"></p>
+                    <p className="bg-[url(./assets/Images/star2.png)] bg-contain h-10 w-32 mt-10" style ={{ backgroundImage: `url(${star})`}}></p>
                 </div>
             </div>
     </div>
@@ -417,7 +445,7 @@ export default function Main(){
       <div className="grid grid-cols-3 gap-8 px-4  ">
         {/* Card 1 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className=" rounded-lg bg-[url(./assets/Images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg)] bg-cover h-60">
+        <div className=" rounded-lg bg-[url(./assets/Images/)] bg-cover h-60" style ={{ backgroundImage: `url(${migration})`}}>
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Savor the Flavor: A Deep Dive Into Veg 
@@ -444,7 +472,7 @@ export default function Main(){
 
         {/* Card 2 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className="bg-[url(./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg)] bg-cover h-60 rounded">
+        <div className="bg-[url(./assets/Images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg)] bg-cover h-60 rounded" style ={{ backgroundImage: `url(${grill})`}}>
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Quick and Delicious: 30-Minute Meals for Busy Days
@@ -527,8 +555,8 @@ export default function Main(){
 
         {/* Background Image with Opacity */}
         <div
-            className="absolute inset-0 bg-[url('./assets/Images/vector-map-world-square-dots-260nw-1937582827.webp')] 
-            bg-cover  opacity-60"
+            className="absolute inset-0 
+            bg-cover  opacity-60"style={{ backgroundImage: `url(${worldMap})` }}
         ></div>
 
         {/* Text not faded */}
@@ -538,7 +566,112 @@ export default function Main(){
 
         </div>
   </section>
+           {/* subscriber */}
+<div className="w-full bg-white pt-20">
+  
+  {/* SUBSCRIBE CARD */}
+  <div className="w-full flex justify-center -mb-24 z-50 relative">
+    <div className="bg-[#F7C9B5] w-90  rounded-3xl p-10 shadow-lg text-center">
+      
+      <h1 className="text-3xl font-bold text-gray-800">
+        Subscribe For Our <span className="text-orange-600">Exclusive</span> Information
+      </h1>
 
+      <div className="flex justify-center mt-6">
+        <div className="flex bg-white p-2 rounded-lg shadow-md w-full max-w-md">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            className="flex-1 px-3 py-2 border bg-gray-200 border-gray-300 rounded-tl rounded-bl focus:outline-none focus:ring focus:ring-orange-400 "
+          />
+          <button className="bg-orange-500 text-white px-6  rounded-tr rounded-br   hover:bg-orange-600 transition">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+</div>
+             {/* FOOTER */}
+  <div className="bg-orange-600 pt-32 pb-16 px-16 text-white">
+
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      {/* BRAND */}
+      <div>
+        <h2 className="text-3xl font-bold mb-4">Sofood</h2>
+        <p className="text-sm leading-6">
+          We proudly present authentic dishes from various regions of the 
+          archipelago, bringing authentic flavors and Indonesian traditions 
+          to every dish we serve.
+        </p>
+
+        <div className="flex gap-3 mt-5">
+  <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
+    <i className="fa-brands fa-youtube text-orange-600 text-xl "></i>
+  </div>
+
+  <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
+    <i className="fa-brands fa-facebook text-orange-600 text-xl"></i>
+  </div>
+
+  <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
+    <i className="fa-brands fa-instagram text-orange-600 text-xl"></i>
+  </div>
+
+  <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
+    <i className="fa-brands fa-linkedin text-orange-600 text-xl"></i>
+  </div>
+</div>
+
+      </div>
+
+      {/* HELP CENTER */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-4">Help Center</h3>
+         <hr className="border-white w-40 mb-4" />
+        <ul className="space-y-3">
+          <li> Customer Support</li>
+          <li> Terms & Conditions</li>
+          <li> Privacy Policy</li>
+        </ul>
+      </div>
+
+      {/* CONTACT INFO */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
+         <hr className="border-white w-40 mb-4" />
+        <ul className="space-y-3 text-sm">
+          <li>Emerald Street, South Tangerang, Indonesia</li>
+          <li>+26 123456789</li>
+          <li>+26 123456789</li>
+          <li>info@yoursite.com</li>
+        </ul>
+      </div>
+
+      {/* OPENING HOURS */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-4">Opening Hours</h3>
+         <hr className="border-white w-40 mb-4" />
+        <ul className="space-y-3 text-sm">
+          <li>Mon  Tue : 08.00 AM  09.00 PM</li>
+          <li>Wed  Thu : 09.00 AM  10.00 PM</li>
+          <li>Fri  Sat : 08.00 AM  12.00 PM</li>
+          <li>Sunday : CLOSED</li>
+        </ul>
+      </div>
+ 
+    </div>
+<hr className="border-t border-white w-full mt-10 mb-4" />
+
+  {/* copyright */}
+  <p className="text-center text-white text-sm">
+    2025 Sofood. All Rights Reserved.
+  </p>
+  </div>
 
       
         </>
