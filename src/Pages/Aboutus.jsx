@@ -1,14 +1,32 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import istock from '../assets/images/istockphoto-1457979959-612x612.jpg'
+import img2 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
+import img3 from '../assets/images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp'
+import img4 from '../assets/images/1-10-Most-Consumed-Beverages-in-the-World-Source-vinut.com_.vn_.webp'
+import img5 from '../assets/images/2aut47ag_north-indian-food_625x300_28_March_25.jpg'
+import img6 from '../assets/images/catering-staff-serves-food-buffet-600nw-2630302985.webp'
+import img7 from '../assets/images/g.png'
+import img8 from '../assets/images/istockphoto-485286424-612x612.jpg'
+import img9 from '../assets/images/darker3.png'
+import img10 from '../assets/images/darker.png'
+import img11 from '../assets/images/Restaurant-Online-Food-Delivery-1.webp'
+import img12 from '../assets/images/darker2.png'
+import img13 from '../assets/images/images.jpg'
+import img14 from '../assets/images/target.png'
+import img15 from '../assets/images/Sjk.png'
+import img16 from '../assets/images/diamonfd.png'
+import img17 from '../assets/images/c.avif'
+import img18 from '../assets/images/c2.jpg'
+import img19 from '../assets/images/c3.jpg'
 
-
-export default function AboutUs(){
+ function AboutUs(){
     return(
         <>
         {/* about section header wala page */}
         <section>
-            <div className="bg-[url(./assets/Images/istockphoto-1457979959-612x612.jpg)] bg-cover opacity-90 h-[520px]">
+            <div className=" bg-cover opacity-90 h-[520px]"style ={{ backgroundImage: `url(${istock})`}}>
                 <div className="px-32 pt-56">
                 <div className=" text-white text-[70px]  font-serif font-semibold">About Us</div>
 
@@ -32,7 +50,7 @@ export default function AboutUs(){
                 <div className="col-span-1">
                     <div className="relative flex justify-end">
                     <div className="bg-orange-500 w-full h-[400px] mt-32 absolute px-2"></div>
-                      <div className="bg-[url(./assets/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp)] bg-cover w-[520px] h-[600px] absolute mt-10 mx-5"></div>
+                      <div className="bg-[url(p)] bg-cover w-[520px] h-[600px] absolute mt-10 mx-5" style ={{ backgroundImage: `url(${img2})`}}></div>
                     </div>
                 </div>
 
@@ -56,9 +74,10 @@ export default function AboutUs(){
 
                         {/* image section short */}
                         <div className="flex justify-center gap-[90px] mt-10">
-                            <div className=" bg-[url(./assets/Images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp)] bg-cover h-[105px] w-32 rounded-full"></div>
-                            <div className=" bg-[url(./assets/Images/1-10-Most-Consumed-Beverages-in-the-World-Source-vinut.com_.vn_.webp)] bg-cover h-[105px] w-32 rounded-full"></div>
-                            <div className=" bg-[url(./assets/Images/2aut47ag_north-indian-food_625x300_28_March_25.jpg)] h-[105px] w-32 rounded-full bg-cover" ></div>
+                            <div className=" bg-[url()] bg-cover h-[105px] w-32 rounded-full" style ={{ backgroundImage: `url(${img3})`}}></div>
+                            <div className=" bg-[url()] bg-cover h-[105px] w-32 rounded-full"
+                            style ={{ backgroundImage: `url(${img4})`}}></div>
+                            <div className=" bg-[url()] h-[105px] w-32 rounded-full bg-cover" style ={{ backgroundImage: `url(${img5})`}}></div>
                         </div>
 
                            <div className="flex items-center justify-between ml-5 mt-5 text-orange-500 font-semibold">
@@ -78,40 +97,40 @@ export default function AboutUs(){
         <section className="h-[600px]">
             <div className="grid grid-cols-4 px-[250px] gap-2 h-[500px]">
 
-                    <div className="bg-[url(./assets/Images/catering-staff-serves-food-buffet-600nw-2630302985.webp)] bg-cover w-[250px]"></div>
+                    <div className="bg-[url()] bg-cover w-[250px]"style ={{ backgroundImage: `url(${img6})`}} ></div>
                     <div className="bg-orange-500 w-[250px] h-[250px]">
-                        <div className="bg-[url(./assets/Images/g.png)] bg-cover h-[80px] w-[80px] ml-[70px] mt-5"></div>
+                        <div className="bg-[url()] bg-cover h-[80px] w-[80px] ml-[70px] mt-5" style ={{ backgroundImage: `url(${img7})`}}></div>
                         <p className="text-white text-xl text-center font-semibold">Catering Packages</p>
                         <p className="text-white text-sm leading-tight pt-5 text-center px-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
                     </div>
 
 
-                    <div className="bg-[url(./assets/Images/istockphoto-485286424-612x612.jpg)] bg-cover w-[250px] "></div>
+                    <div className="bg-[url()] bg-cover w-[250px] " style ={{ backgroundImage: `url(${img8})`}} ></div>
 
                     <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                        <div className="bg-[url(./assets/Images/darker3.png)] bg-cover h-[110px] w-[180px] "></div>
+                        <div className="bg-[url()] bg-cover h-[110px] w-[180px] "style ={{ backgroundImage: `url(${img9})`}}  ></div>
                         <p className="text-center text-orange-500 text-xl font-semibold">Cooking Class</p>
                         <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
                     </div>
 
 
                     <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                        <div className="bg-[url(./assets/Images/darker.png)] bg-cover h-[120px] w-[140px] ml-3"></div>
+                        <div className="bg-[url()] bg-cover h-[120px] w-[140px] ml-3" style ={{ backgroundImage: `url(${img10})`}} ></div>
                         <p className="text-center text-orange-500 text-xl font-semibold">Order Deliver</p>
                           <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
                     </div>
 
 
-                    <div className="bg-[url(./assets/Images/Restaurant-Online-Food-Delivery-1.webp)] bg-cover w-[250px] h-[250px]"></div>
+                    <div className="bg-[url()] bg-cover w-[250px] h-[250px]" style ={{ backgroundImage: `url(${img11})`}} ></div>
 
 
                     <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                    <div className="bg-[url(./assets/Images/darker2.png)] bg-cover h-[100px] w-[140px] ml-7"></div>
+                    <div className="bg-[url()] bg-cover h-[100px] w-[140px] ml-7"style ={{ backgroundImage: `url(${img12})`}} ></div>
                      <p className="text-center text-orange-500 text-xl font-semibold">Reservations</p>
                     <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
                     </div>
                 
-                    <div className="bg-[url(./assets/Images/images.jpg)] bg-cover w-[250px] "></div>
+                    <div className="bg-[url()] bg-cover w-[250px] " style ={{ backgroundImage: `url(${img13})`}} ></div>
                 </div>
         </section>
 
@@ -136,9 +155,9 @@ export default function AboutUs(){
 
                 <div className="flex gap-10 mt-32">
                     <div className="flex-col items-center justify-center">
-                            <div className="bg-[url(./assets/Images/target.png)] bg-cover h-[70px] w-[70px]"></div>
-                            <div className="mt-16 bg-[url(./assets/Images/Sjk.png)] bg-cover h-[70px] w-[70px]"></div>
-                            <div className="mt-16 bg-[url(./assets/Images/diamonfd.png)] bg-cover  h-[70px] w-[70px]"></div>
+                            <div className="bg-[url()] bg-cover h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img14})`}} ></div>
+                            <div className="mt-16 bg-[url()] bg-cover h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img15})`}} ></div>
+                            <div className="mt-16 bg-[url()] bg-cover  h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img16})`}} ></div>
                     </div>  
 
                     <div className="flex-col items-center justify-center text-white">
@@ -179,7 +198,7 @@ export default function AboutUs(){
 
                 <div className="grid grid-cols-3 mt-20 h-[400px] gap-8 px-32">
                     <div className="  shadow-xl">
-                        <div className="bg-[url(./assets/Images/c.avif)] bg-cover h-[300px]"></div>
+                        <div className="bg-[url()] bg-cover h-[300px]" style ={{ backgroundImage: `url(${img17})`}} ></div>
                         <div className="text-center pt-5">
                             <p className="text-orange-500 text-3xl font-bold">Mr.Benny John</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
@@ -207,7 +226,7 @@ export default function AboutUs(){
                     </div>
                   
                     <div className=" shadow-xl">
-                        <div className="bg-[url(./assets/Images/c2.jpg)] bg-cover h-[300px]"></div>
+                        <div className="bg-[url()] bg-cover h-[300px]" style ={{ backgroundImage: `url(${img18})`}} ></div>
                         <div className="text-center pt-5">
                             <p className="text-orange-500 text-3xl font-bold">Mr.Chand Siyap</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
@@ -235,7 +254,7 @@ export default function AboutUs(){
                     </div>
 
                       <div className=" shadow-xl">
-                        <div className="bg-[url(./assets/Images/c3.jpg)] bg-cover h-[300px]"></div>
+                        <div className="bg-[url()] bg-cover h-[300px]" style ={{ backgroundImage: `url(${img19})`}} ></div>
                         <div className="text-center pt-5">
                             <p className="text-orange-500 text-3xl font-bold">Mr.David Orja</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
@@ -266,3 +285,4 @@ export default function AboutUs(){
         </>
     )
 }
+export default AboutUs;
