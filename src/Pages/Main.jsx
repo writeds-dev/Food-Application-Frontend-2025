@@ -362,7 +362,7 @@ export default function Main(){
         </div>
   
 
-   <div className="h-full bg-orange-100 mt-20">
+   <div className="h-full bg-orange-100 mt-20 mb-20">
         <div className="grid grid-cols-5 px-40 gap-2">
         <div className="col-span-2 pl-">
 
@@ -403,7 +403,7 @@ export default function Main(){
 </div>
 </div>
 
-<div className="mt-24">
+<div className="mt-14">
  <section className=" py-20 ">
   {/* Heading */}
   <div className="text-center max-w-4xl mx-auto">
@@ -468,7 +468,7 @@ export default function Main(){
   </div>
 
   {/* Pagination */}
-  <div className="flex justify-center gap-4 mt-12">
+  <div className="flex justify-center gap-4 mt-8">
     {[1, 2, 3, 4].map(n => (
       <button
         key={n}
