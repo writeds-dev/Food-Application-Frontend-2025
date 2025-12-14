@@ -385,7 +385,7 @@ export default function Main(){
         <div className=" bg-[url(./assets/Images/nds.webp)] bg-contain h-[330px] w-[640px] mt-10" style ={{ backgroundImage: `url(${nds})`}}></div>
 
         <div className="w-[640px]">
-        <p className="text-sm mt-16 text-gray-600 pl-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p className="text-sm  text-gray-600 pl-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Ex voluptates dolores soluta cupiditate iusto modi rem eligendi voluptatum dolorum error aspernatur, maiores du minima suscipit exercitationem non debitis obcaecatwbdubwwehfuiwehfuewhfiuhh3i.</p>
 
              <div className="grid grid-cols-2 mt-9 pl-7 gap-10">
