@@ -404,7 +404,8 @@ export default function Main(){
 </div>
 </div>
 
- <section className="bg-[#FFF1DE] py-20 mt-60">
+<div className="mt-60">
+ <section className="bg-[#FFF1DE] py-20 ">
   {/* Heading */}
   <div className="text-center max-w-4xl mx-auto">
     <p className="tracking-widest text-sm text-gray-600">
@@ -479,9 +480,9 @@ export default function Main(){
     ))}
   </div>
 </section>
+</div>
 
-
-
+<div></div>
 <section className="py-20 bg-white px-32">
       {/* Heading */}
       <div className="text-center mb-12">
