@@ -499,7 +499,7 @@ export default function Main(){
     </div>
         {/* Card 3 */}
         <div className="h-96 hover:shadow-xl transition rounded">
-        <div className="bg-cover h-60 rounded ">
+        <div className=" bg-cover h-60 rounded" style ={{ backgroundImage: `url(${unhealthy})`}}>
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
               Catering Perfection: Tips and Recipes for Your Event
