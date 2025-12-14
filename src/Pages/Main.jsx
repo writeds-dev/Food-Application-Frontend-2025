@@ -39,6 +39,7 @@ import migration from '../assets/images/__opt__aboutcom__coeus__resources__conte
 import grill from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
 import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
 export default function Main(){
+  
     return(
         <>
 <div className="  bg-cover w-screen h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
@@ -279,9 +280,9 @@ export default function Main(){
 
    <div className="flex justify-center mt-8 items-center gap-10 cursor-pointer">
     <div className="bg-orange-600 flex items-center justify-center text-sm h-7 w-20 rounded text-white">View All</div>
-    <div className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Food</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Cart</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Snacks</div>
+    <div className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Food</div>
+    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Cart</div>
+    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Snacks</div>
    </div>
    </div>
 
