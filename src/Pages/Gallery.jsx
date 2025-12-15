@@ -1,11 +1,11 @@
-import hero from "../assets/Images/pexels-chanwalrus-958545.jpg";
+import hero from "../assets/images/pexels-chanwalrus-958545.jpg";
 
-import g1 from "../assets/Images/istockphoto-1434531397-612x612.jpg";
-import g2 from "../assets/Images/213c8012b9827c35eb17cd9cb29d3563.jpg";
-import g3 from "../assets/Images/beef-rendang-1.jpg";
-import g4 from "../assets/Images/gomoku-mixed-rice-cooked-clay-600nw-2344585305.webp";
-import g5 from "../assets/Images/Mixed-Veg-Rice-Delight_-done.png";
-import g6 from "../assets/Images/360_F_698535008_ytN0Ei4AK1uQ4Zq6zFBeosCawCSbNNXM.jpg";
+import g1 from "../assets/images/istockphoto-1434531397-612x612.jpg";
+import g2 from "../assets/images/213c8012b9827c35eb17cd9cb29d3563.jpg";
+import g3 from "../assets/images/beef-rendang-1.jpg";
+import g4 from "../assets/images/gomoku-mixed-rice-cooked-clay-600nw-2344585305.webp";
+import g5 from "../assets/images/Mixed-Veg-Rice-Delight_-done.png";
+import g6 from "../assets/images/360_F_698535008_ytN0Ei4AK1uQ4Zq6zFBeosCawCSbNNXM.jpg";
 export default function Gallerys() {
   const images = [
     { img: g1, title: "Authentic Cuisine" },
