@@ -153,7 +153,7 @@ export default function Main(){
 
 
         <div className="grid grid-cols-2 h-screen">
-            <div className="pl-[80px] pt-52 p-4">
+            <div className="pl-[80px] pt-32 p-4">
             <div className="relative">
                 <div className="bg-orange-500 w-10 h-[2px] absolute mt-3">  </div>     
                 <div className="text-black text-md font-semibold absolute pl-14">About Us</div>
@@ -176,7 +176,7 @@ export default function Main(){
             </div>
              <div className="flex relative">
             <div className=" bg-cover w-[530px] h-[500px] mt-44 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
-            <div  className="h-[400px] w-72 flex justify-end items-end mt-6 absolute ml-[380px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
+            <div  className="h-[400px] w-64 flex justify-end items-end mt-10 absolute ml-[350px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
         </div>
     </div>
 
