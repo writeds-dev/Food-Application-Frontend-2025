@@ -38,9 +38,68 @@ import nds from '../assets/images/nds.webp'
 import migration from '../assets/images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg'
 import grill from '../assets/images/Grilled-Flat-Beans-with-Agrodolce-FT-RECIPE0723-8c80c70e11734e9a8e113a2bfb40153d.jpg'
 import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp'
+import { useState } from "react";
 export default function Main(){
+   const [category, setCategory] = useState("all");
+
+  const items = [
+    {
+      id: 1,
+      title: "Burger",
+      category: "snacks",
+      img: unhealthy,
+    },
+    {
+      id: 2,
+      title: "Chicken Seekh Kabab",
+      category: "food",
+      img: null, // gradient card
+    },
+    {
+      id: 3,
+      title: "Mix Veg",
+      category: "food",
+      img: traditional,
+    },
+    {
+      id: 4,
+      title: "Machio",
+      category: "food",
+      img: veg,
+    },
+    {
+      id: 5,
+      title: "Vegetables",
+      category: "food",
+      img: health,
+    },
+    {
+      id: 6,
+      title: "Lenticles",
+      category: "food",
+      img: vegan1,
+    },
+    {
+      id: 7,
+      title: "Pizza",
+      category: "snacks",
+      img: istock,
+    },
+    {
+      id: 8,
+      title: "Salad",
+      category: "snacks",
+      img: ella,
+    },
+  ];
+
+  const filteredItems =
+    category === "all"
+      ? items
+      : items.filter(item => item.category === category);
     return(
         <>
+         <></>
 <div className="  bg-cover w-full h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
     <div className="bg-black h-24 flex  items-center justify-around bg-opacity-30">
         <div className="text-3xl font-extrabold text-white">F O O D C O U R T</div>
@@ -276,93 +335,83 @@ export default function Main(){
          </p>
    </div>
 
-
-   <div className="flex justify-center mt-8 items-center gap-10 cursor-pointer">
-    <div className="bg-orange-600 flex items-center justify-center text-sm h-7 w-20 rounded text-white">View All</div>
-    <div className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Food</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Cart</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Snacks</div>
-   </div>
-   </div>
-
-
-      <div className="grid grid-cols-4 gap-4 px-36">
-            <div className="border-[1px] border-orange-400 h-[300px]">
-                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${unhealthy})`}}></div>
-                <div>
-                <p className="text-orange-400 font-bold mx-4">Burger</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div>
-                <div className="bg-gradient-to-t from-orange-400  to-blue-300 h-[300px]">
-                    <div className=" pt-32">
-                        <p className="text-white font-bold text-2xl mx-3">Chicken Seekh Kabab</p>
-                        <p className="text-sm mx-3 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos a nobis ut quas inventore ullam maiores, quod nisi ducimus quisquam officiis necessitatibus exercitationem consectetur vitae voluptates adipisci saepe odio facere.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${traditional})`}}></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Mix Veg</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${veg})`}}></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Machio</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${health})`}}></div>
-                  <div >
-                <p className="text-orange-400 font-bold mx-4">Vegetables</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-cover h-[200px]" style ={{ backgroundImage: `url(${vegan1})`}}></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Lenticles</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${istock})`}}></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Pizza</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className=" bg-cover h-[200px]" style ={{ backgroundImage: `url(${ella})`}}></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Salad</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
+{/* FILTER BUTTONS */}
+      <div className="flex justify-center mt-8 items-center gap-10 cursor-pointer">
+        <div
+          onClick={() => setCategory("all")}
+          className={`flex items-center justify-center text-sm h-7 w-20 rounded
+          ${category === "all"
+            ? "bg-orange-600 text-white"
+            : "border-2 border-orange-500 text-orange-500"}`}
+        >
+          View All
         </div>
+
+        <div
+          onClick={() => setCategory("food")}
+          className={`flex items-center justify-center text-sm h-7 w-20 rounded
+          ${category === "food"
+            ? "bg-orange-600 text-white"
+            : "border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white"}`}
+        >
+          Food
+        </div>
+
+        <div
+          onClick={() => setCategory("snacks")}
+          className={`flex items-center justify-center text-sm h-7 w-20 rounded
+          ${category === "snacks"
+            ? "bg-orange-600 text-white"
+            : "border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white"}`}
+        >
+          Snacks
+        </div>
+      </div>
+
+      {/* CARDS */}
+      <div className="grid grid-cols-4 gap-4 px-36 mt-10">
+        {filteredItems.map(item => (
+          <div
+            key={item.id}
+            className="border-[1px] border-orange-400 h-[300px]"
+          >
+            {item.img ? (
+              <div
+                className="bg-cover h-[200px]"
+                style={{ backgroundImage: `url(${item.img})` }}
+              ></div>
+            ) : (
+              <div className="bg-gradient-to-t from-orange-400 to-blue-300 h-[300px] flex flex-col justify-center">
+                <p className="text-white font-bold text-2xl mx-3">
+                  {item.title}
+                </p>
+                <p className="text-sm mx-3 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            )}
+
+            {item.img && (
+              <div>
+                <p className="text-orange-400 font-bold mx-4">
+                  {item.title}
+                </p>
+                <p className="text-[10px] mx-3 text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+   
+
+
+
+     
   
 
-   <div className="h-full bg-orange-100 mt-20 mb-20">
+   <div className="h-max bg-orange-100 mt-20 mb-20">
         <div className="grid grid-cols-5 px-40 gap-2">
         <div className="col-span-2 pl-">
 
@@ -417,7 +466,7 @@ export default function Main(){
   </div>
 
   {/* Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-20">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-16 px-20">
     
     {/* Card 1 */}
     <div className="bg-orange-600 text-white p-6 rounded-xl shadow-lg">
@@ -468,16 +517,12 @@ export default function Main(){
   </div>
 
   {/* Pagination */}
-  <div className="flex justify-center gap-4 mt-8">
-    {[1, 2, 3, 4].map(n => (
-      <button
-        key={n}
-        className="w-8 h-8 border border-orange-600 text-orange-600 rounded hover:bg-orange-600 hover:text-white transition"
-      >
-        {n}
-      </button>
-    ))}
-  </div>
+  <div className="flex justify-center gap-3 mt-8">
+  <button className="w-3 h-3 bg-orange-300 rounded-full hover:bg-orange-600"></button>
+  <button className="w-3 h-3 bg-orange-300 rounded-full hover:bg-orange-600"></button>
+  <button className="w-3 h-3 bg-orange-300 rounded-full hover:bg-orange-600"></button>
+</div>
+
 </section>
 </div>
 
@@ -727,7 +772,8 @@ export default function Main(){
   </div>
 
       
-        </>
+      </div>
+       </>
 
     )
 }

@@ -20,6 +20,7 @@ import img16 from '../assets/images/diamonfd.png'
 import img17 from '../assets/images/c.avif'
 import img18 from '../assets/images/c2.jpg'
 import img19 from '../assets/images/c3.jpg'
+import { Link } from "react-router-dom";
 
  function AboutUs(){
     return(
@@ -94,94 +95,174 @@ import img19 from '../assets/images/c3.jpg'
 
 
         {/*  images section */}
-        <section className="h-[600px]">
-            <div className="grid grid-cols-4 px-[250px] gap-2 h-[500px]">
+     <section className="py-20">
+  <div className="grid grid-cols-4 gap-4 max-w-[1100px] mx-auto">
 
-                    <div className="bg-[url()] bg-cover w-[250px]"style ={{ backgroundImage: `url(${img6})`}} ></div>
-                    <div className="bg-orange-500 w-[250px] h-[250px]">
-                        <div className="bg-[url()] bg-cover h-[80px] w-[80px] ml-[70px] mt-5" style ={{ backgroundImage: `url(${img7})`}}></div>
-                        <p className="text-white text-xl text-center font-semibold">Catering Packages</p>
-                        <p className="text-white text-sm leading-tight pt-5 text-center px-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
-                    </div>
+    {/* IMAGE */}
+    <div
+      className="h-[250px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${img6})` }}
+    ></div>
 
+    {/* ORANGE CARD */}
+    <div className="h-[250px] bg-orange-500 flex flex-col items-center justify-center text-center px-4">
+      <div
+        className="h-[70px] w-[70px] bg-contain bg-no-repeat mb-4"
+        style={{ backgroundImage: `url(${img7})` }}
+      ></div>
+      <h3 className="text-white text-xl font-semibold">
+        Catering Packages
+      </h3>
+      <p className="text-white text-sm mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
 
-                    <div className="bg-[url()] bg-cover w-[250px] " style ={{ backgroundImage: `url(${img8})`}} ></div>
+    {/* IMAGE */}
+    <div
+      className="h-[250px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${img8})` }}
+    ></div>
 
-                    <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                        <div className="bg-[url()] bg-cover h-[110px] w-[180px] "style ={{ backgroundImage: `url(${img9})`}}  ></div>
-                        <p className="text-center text-orange-500 text-xl font-semibold">Cooking Class</p>
-                        <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
-                    </div>
+    {/* DASHED CARD */}
+    <div className="h-[250px] border-2 border-dashed border-orange-500 flex flex-col items-center justify-center text-center px-4">
+      <div
+        className="h-[90px] w-[90px] bg-contain bg-no-repeat mb-4"
+        style={{ backgroundImage: `url(${img9})` }}
+      ></div>
+      <h3 className="text-orange-500 text-xl font-semibold">
+        Cooking Class
+      </h3>
+      <p className="text-gray-500 text-sm mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
 
+    {/* DASHED CARD */}
+    <Link to="/contact">
+    <div className="h-[250px] border-2 border-dashed border-orange-500 flex flex-col items-center justify-center text-center px-4">
+      <div
+        className="h-[90px] w-[90px] bg-contain bg-no-repeat mb-4"
+        style={{ backgroundImage: `url(${img10})` }}
+      ></div>
+      <h3 className="text-orange-500 text-xl font-semibold">
+        Order Deliver
+      </h3>
+      <p className="text-gray-500 text-sm mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+      </Link>
+    {/* IMAGE */}
+    <div
+      className="h-[250px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${img11})` }}
+    ></div>
 
-                    <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                        <div className="bg-[url()] bg-cover h-[120px] w-[140px] ml-3" style ={{ backgroundImage: `url(${img10})`}} ></div>
-                        <p className="text-center text-orange-500 text-xl font-semibold">Order Deliver</p>
-                          <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
-                    </div>
+    {/* DASHED CARD */}
+     <Link to="/reservation">
+    <div className="h-[250px] border-2 border-dashed border-orange-500 flex flex-col items-center justify-center text-center px-4">
+      <div
+        className="h-[90px] w-[90px] bg-contain bg-no-repeat mb-4"
+        style={{ backgroundImage: `url(${img12})` }}
+      ></div>
+      <h3 className="text-orange-500 text-xl font-semibold">
+       Reservations
+      </h3>
+      <p className="text-gray-500 text-sm mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+    </Link>
 
+    {/* IMAGE */}
+    <div
+      className="h-[250px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${img13})` }}
+    ></div>
 
-                    <div className="bg-[url()] bg-cover w-[250px] h-[250px]" style ={{ backgroundImage: `url(${img11})`}} ></div>
+  </div>
+</section>
 
-
-                    <div className="border-[3px] border-orange-500 border-dashed w-[250px] ">
-                    <div className="bg-[url()] bg-cover h-[100px] w-[140px] ml-7"style ={{ backgroundImage: `url(${img12})`}} ></div>
-                     <p className="text-center text-orange-500 text-xl font-semibold">Reservations</p>
-                    <p className="text-gray-500 text-sm leading-tight pt-4 text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.enim id molestias possimus recusandae asperiores nam reiciendis vero</p>
-                    </div>
-                
-                    <div className="bg-[url()] bg-cover w-[250px] " style ={{ backgroundImage: `url(${img13})`}} ></div>
-                </div>
-        </section>
 
 
 
         {/*  why choice us */}
 
-        <section>
-            <div  className="h-screen relative">
-            <div className="bg-gray-400 h-full w-full absolute">
-                <div className="bg-orange-500 h-[80%] w-[90%] absolute m-20 grid grid-cols-2">
-                    <div className="grid-cols-1 mx-32 mt-52">
-                        <div className="flex items-center gap-2">
-                        <p className="bg-white h-[2px] w-[30px]"> </p>
-                        <p className="text-white tracking-widest">WHY  CHOICE US </p>
-                        </div>
+      <section className="h-screen relative">
+  {/* BACKGROUND */}
+  <div className="bg-gray-400 h-full w-full flex items-center justify-center">
 
-                       <p className="text-white font-bold text-[42px] leading-tight font-serif mt-5">Our Commitment is <br /> Why We Stand Out</p>
-                 </div>
+    {/* ORANGE CONTAINER */}
+    <div className="bg-orange-500 h-[80%] w-[90%] grid grid-cols-2 px-24">
 
-            {/* right coloum */}
+      {/* LEFT COLUMN */}
+      <div className="flex flex-col justify-center">
+        <div className="flex items-center gap-3">
+          <span className="bg-white h-[2px] w-[30px]"></span>
+          <p className="text-white tracking-widest text-sm">
+            WHY CHOOSE US
+          </p>
+        </div>
 
-                <div className="flex gap-10 mt-32">
-                    <div className="flex-col items-center justify-center">
-                            <div className="bg-[url()] bg-cover h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img14})`}} ></div>
-                            <div className="mt-16 bg-[url()] bg-cover h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img15})`}} ></div>
-                            <div className="mt-16 bg-[url()] bg-cover  h-[70px] w-[70px]" style ={{ backgroundImage: `url(${img16})`}} ></div>
-                    </div>  
+        <h2 className="text-white font-bold text-[42px] leading-tight font-serif mt-6">
+          Our Commitment is <br /> Why We Stand Out
+        </h2>
+      </div>
 
-                    <div className="flex-col items-center justify-center text-white">
-                        <div>
-                            <p className="text-xl font-semibold">SoFood Vision</p>
-                            <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatibus enim minima praesentium, qui libero ut quo at illum dolorum.</p>
-                        </div>
+      {/* RIGHT COLUMN */}
+      <div className="flex gap-10 items-center">
 
-                        <div className="mt-10">
-                            <p className="text-xl font-semibold">SoFood Vision</p>
-                            <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatibus enim minima praesentium, qui libero ut quo at illum dolorum.</p>
-                        </div>
+        {/* ICONS */}
+        <div className="flex flex-col gap-16">
+          <div
+            className="h-[70px] w-[70px] bg-cover"
+            style={{ backgroundImage: `url(${img14})` }}
+          ></div>
 
-                         <div className="mt-10">
-                            <p className="text-xl font-semibold ">SoFood Vision</p>
-                            <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatibus enim minima praesentium, qui libero ut quo at illum dolorum.</p>
-                        </div>
+          <div
+            className="h-[70px] w-[70px] bg-cover"
+            style={{ backgroundImage: `url(${img15})` }}
+          ></div>
 
-                        </div>
-                    </div>
-                    </div>  
-                </div>
-            </div>
-        </section>
+          <div
+            className="h-[70px] w-[70px] bg-cover"
+            style={{ backgroundImage: `url(${img16})` }}
+          ></div>
+        </div>
+
+        {/* TEXT */}
+        <div className="text-white flex flex-col gap-10 max-w-md">
+          <div>
+            <h3 className="text-xl font-semibold">SoFood Vision</h3>
+            <p className="mt-3 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cumque voluptatibus enim minima praesentium.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold">SoFood Mission</h3>
+            <p className="mt-3 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cumque voluptatibus enim minima praesentium.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold">Quality Promise</h3>
+            <p className="mt-3 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cumque voluptatibus enim minima praesentium.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
         {/* meet our chefs */}
