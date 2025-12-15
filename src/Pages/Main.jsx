@@ -107,9 +107,10 @@ export default function Main(){
         <ul className=" flex items-center justify-center gap-20 cursor-pointer">
             <Link to={"/"} className="text-white font-bold">Home</Link>
             <Link to={"/menu"} className="text-white font-bold">Menu</Link>
-            <Link to={"/blogs"}  className="text-white font-bold">Blog</Link >
+            <Link to={"/blog"}  className="text-white font-bold">Blog</Link >
             <Link to={"/contact"} className="text-white font-bold">Contact</Link>
-            <li className="text-white font-bold">Catering</li>
+            <Link to={"/details"} className="text-white font-bold">Details</Link>
+            
             <button className="bg-orange-600 text-white w-24 h-8 rounded-lg hover:scale-110 transition-transform duration-200 animate-pulse flex items-center justify-center gap-2">
                  <i className="fi fi-rr-phone-call"></i>
                  Call Us
