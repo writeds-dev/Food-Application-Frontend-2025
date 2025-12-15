@@ -70,7 +70,7 @@ export default function Chefs() {
 
             <p className="text-gray-600 mt-6 leading-7">
               Dedicated to authentic flavors, fresh ingredients,
-              and unforgettable culinary experiences.
+              and unforgettable culinary experiences. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis! Dolorem dolor at ab natus laboriosam vel error soluta obcaecati. Quaerat similique suscipit quidem. Necessitatibus modi dolorem dicta aut veniam distinctio corrupti cupiditate?
             </p>
 
             
