@@ -6,7 +6,7 @@ import img2 from "../assets/images/hi7-food-delivery-suryapet-nvbk6vythv.avif";
 export default function Contact() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section
         className="h-[520px] bg-cover bg-center relative"
         style={{ backgroundImage: `url(${img1})` }}
@@ -30,7 +30,7 @@ export default function Contact() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
 
-          {/* LEFT CARD */}
+          {/* LEFT INFO CARD */}
           <div className="bg-orange-50 p-8 rounded-xl shadow">
             <h2 className="text-2xl font-semibold text-orange-600 mb-4">
               Get in Touch
@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* SOCIAL */}
+            {/* SOCIAL ICONS */}
             <div className="flex gap-4 mt-8">
               {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
                 <div
@@ -87,27 +87,52 @@ export default function Contact() {
               <span className="text-orange-600"> Share</span> Experiences
             </h2>
 
-            <form className="space-y-5">
-              <div className="grid md:grid-cols-2 gap-5">
-                <input className="input" placeholder="First Name" />
-                <input className="input" placeholder="Last Name" />
+            {/* FORM */}
+            <form className="mt-8 space-y-6 max-w-3xl">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="border border-orange-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  className="border border-orange-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
               </div>
 
-              <div className="grid md:grid-cols-2 gap-5">
-                <input className="input" placeholder="Email" />
-                <input className="input" placeholder="Phone" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="border border-orange-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="border border-orange-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
               </div>
 
-              <input className="input" placeholder="Subject" />
+              <input
+                type="text"
+                placeholder="Subject"
+                className="border border-orange-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
 
               <textarea
                 rows="5"
-                className="input"
-                placeholder="Write your message"
+                placeholder="Write your message here..."
+                className="border border-orange-300 p-3 rounded-md w-full resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"
               ></textarea>
 
-              <button className="bg-orange-600 text-white px-8 py-3 rounded-md hover:bg-orange-700 transition">
-                Submit Now
+              <button
+                type="submit"
+                className="bg-orange-600 text-white px-10 py-3 rounded-md hover:bg-orange-700 transition font-semibold"
+              >
+                Submit Message
               </button>
             </form>
           </div>
