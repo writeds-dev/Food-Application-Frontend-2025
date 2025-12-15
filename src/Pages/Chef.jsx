@@ -1,12 +1,12 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-import hero from "../assets/Images/photo-1600565193348-f74bd3c7ccdf.jpg";
-import headChef from "../assets/Images/chef-cooking-kitchen-while-wearing-professional-attire_23-2151208288.avif";
+import hero from "../assets/images/photo-1600565193348-f74bd3c7ccdf.jpg";
+import headChef from "../assets/images/chef-cooking-kitchen-while-wearing-professional-attire_23-2151208288.avif";
 
-import c1 from "../assets/Images/c2.jpg";
-import c2 from "../assets/Images/chef.jpeg";
-import c3 from "../assets/Images/c.avif";
-import c4 from "../assets/Images/c3.jpg";
+import c1 from "../assets/images/c2.jpg";
+import c2 from "../assets/images/chef.jpeg";
+import c3 from "../assets/images/c.avif";
+import c4 from "../assets/images/c3.jpg";
 export default function Chefs() {
 
   const SocialIcons = () => (
