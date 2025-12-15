@@ -41,7 +41,7 @@ import vegan1 from '../assets/images/18FD-VEGAN-SIDES-TG-topart-group-clkb-super
 export default function Main(){
     return(
         <>
-<div className="  bg-cover w-screen h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
+<div className="  bg-cover w-full h-[700px]" style={{ backgroundImage: `url(${banner})` }}>
     <div className="bg-black h-24 flex  items-center justify-around bg-opacity-30">
         <div className="text-3xl font-extrabold text-white">F O O D C O U R T</div>
         <div>
