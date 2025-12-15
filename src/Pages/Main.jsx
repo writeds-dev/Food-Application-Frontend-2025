@@ -153,7 +153,7 @@ export default function Main(){
 
 
         <div className="grid grid-cols-2 h-screen">
-            <div className="pl-[180px] pt-52 p-4">
+            <div className="pl-[80px] pt-52 p-4">
             <div className="relative">
                 <div className="bg-orange-500 w-10 h-[2px] absolute mt-3">  </div>     
                 <div className="text-black text-md font-semibold absolute pl-14">About Us</div>
@@ -175,14 +175,14 @@ export default function Main(){
             </div>
             </div>
              <div className="flex relative">
-            <div className=" bg-cover w-[630px] h-[600px] mt-32 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
-            <div  className="h-[500px] w-72 flex justify-end items-end mt-6 absolute ml-[480px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
+            <div className=" bg-cover w-[530px] h-[500px] mt-44 absolute z-10" style ={{ backgroundImage: `url(${vegan})`}}> </div>
+            <div  className="h-[400px] w-72 flex justify-end items-end mt-6 absolute ml-[380px]" style={{backgroundColor:"rgb(170, 120, 80)"}}></div> 
         </div>
     </div>
 
 
 <div>
-    <div className="py-20 mt-64">
+    <div className="py-20 mt-28">
   <div className="flex items-center justify-center text-center">
     <p className="text-black text-5xl font-bold leading-tight">
       <span className="text-orange-500">Navigate</span> Your <br />
@@ -202,7 +202,7 @@ export default function Main(){
 
 </div>   
 
-   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 md:px-32 mt-20">
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 md:px-32 ">
 
   {/* CARD 1 */}
   <div className="text-center space-y-4">
@@ -281,7 +281,7 @@ export default function Main(){
     <div className="bg-orange-600 flex items-center justify-center text-sm h-7 w-20 rounded text-white">View All</div>
     <div className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Food</div>
     <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Cart</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500  hover:bg-orange-600 hover:text-white">Snacks</div>
+    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500 hover:bg-orange-600 hover:text-white">Snacks</div>
    </div>
    </div>
 
