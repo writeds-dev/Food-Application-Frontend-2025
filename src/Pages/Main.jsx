@@ -710,19 +710,19 @@ export default function Main(){
 
         <div className="flex gap-3 mt-5">
   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
-    <i className="fa-brands fa-youtube text-orange-600 text-xl "></i>
+   <Link to="https://www.youtube.com/"> <i className="fa-brands fa-youtube text-orange-600 text-xl "></i></Link>
   </div>
 
   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
-    <i className="fa-brands fa-facebook text-orange-600 text-xl"></i>
+    <Link to="https://www.facebook.com/"><i className="fa-brands fa-facebook text-orange-600 text-xl"></i></Link>
   </div>
 
   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
-    <i className="fa-brands fa-instagram text-orange-600 text-xl"></i>
+   <Link to="https://www.instagram.com/"><i className="fa-brands fa-instagram text-orange-600 text-xl"></i></Link>
   </div>
 
   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center ">
-    <i className="fa-brands fa-linkedin text-orange-600 text-xl"></i>
+   <Link to="https://in.linkedin.com/"> <i className="fa-brands fa-linkedin text-orange-600 text-xl"></i></Link>
   </div>
 </div>
 
